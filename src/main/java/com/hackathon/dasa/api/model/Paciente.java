@@ -1,6 +1,5 @@
 package com.hackathon.dasa.api.model;
 
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +17,7 @@ public class Paciente {
 	
 	private String cpf;
 	private String nome;
-	private List<Exame> exame;
+	//private List<Exame> exame;
 	
 	public Long getId() {
 		return id;
@@ -38,12 +37,7 @@ public class Paciente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public List<Exame> getExame() {
-		return exame;
-	}
-	public void setExame(List<Exame> exame) {
-		this.exame = exame;
-	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
