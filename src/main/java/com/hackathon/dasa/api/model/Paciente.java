@@ -1,6 +1,7 @@
 package com.hackathon.dasa.api.model;
 
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +18,8 @@ public class Paciente {
 	
 	private String cpf;
 	private String nome;
-	//private List<Exame> exame;
+	@Embedded
+	private Exame exame;
 	
 	public Long getId() {
 		return id;
