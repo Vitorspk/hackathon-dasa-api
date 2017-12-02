@@ -20,7 +20,6 @@ public class Paciente {
 	private String nome;
 	private List<Exame> exame;
 	
-	
 	public Long getId() {
 		return id;
 	}
