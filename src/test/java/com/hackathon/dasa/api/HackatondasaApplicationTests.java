@@ -1,4 +1,4 @@
-package com.hackaton.sensedia.api;
+package com.hackathon.dasa.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class HackatonsensediaApplicationTests {
+public class HackatondasaApplicationTests {
 
 	@Test
 	public void contextLoads() {
