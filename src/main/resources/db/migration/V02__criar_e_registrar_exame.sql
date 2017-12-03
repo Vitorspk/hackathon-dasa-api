@@ -1,5 +1,6 @@
 CREATE TABLE exame (
 	id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+	paciente_id BIGINT(20) NOT NULL,
 	codigo BIGINT(20) NOT NULL,
 	data VARCHAR(50) NOT NULL,
 	laudo VARCHAR(50) NOT NULL
@@ -8,11 +9,13 @@ CREATE TABLE exame (
 
 INSERT INTO `hackathondasaapi`.`exame`
 (`id`,
+`paciente_id`,
 `codigo`,
 `data`,
 `laudo`)
 VALUES
 (1,
+1,
 123456,
 '2017-11-01',
 'http://localhost:8080/exames');
@@ -20,11 +23,13 @@ VALUES
 
 INSERT INTO `hackathondasaapi`.`exame`
 (`id`,
+`paciente_id`,
 `codigo`,
 `data`,
 `laudo`)
 VALUES
 (2,
+1,
 1234567,
 '2017-11-02',
 'http://localhost:8080/exames');

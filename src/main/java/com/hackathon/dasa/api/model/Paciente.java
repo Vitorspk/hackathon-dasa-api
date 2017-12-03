@@ -1,10 +1,7 @@
 package com.hackathon.dasa.api.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "paciente")
@@ -16,7 +13,10 @@ public class Paciente {
 	
 	private String cpf;
 	private String nome;
-	
+
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "paciente")
+	private List<Exame> exames;
+
 	public Long getId() {
 		return id;
 	}
@@ -35,7 +35,11 @@ public class Paciente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
+	public List<Exame> getExames() {
+		return exames;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
