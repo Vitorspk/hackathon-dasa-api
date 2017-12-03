@@ -13,7 +13,7 @@ import com.hackathon.dasa.api.model.Imagem;
 import com.hackathon.dasa.api.repository.ImagemRepository;
 
 @RestController
-@RequestMapping("/imagem")
+@RequestMapping("/imagens")
 public class ImagemResource {
 	
 	@Autowired
