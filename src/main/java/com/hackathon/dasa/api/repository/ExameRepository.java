@@ -6,4 +6,6 @@ import com.hackathon.dasa.api.model.Exame;
 
 public interface ExameRepository extends JpaRepository<Exame, Long>{
 
+	Exame findById(Long id);
+	
 }

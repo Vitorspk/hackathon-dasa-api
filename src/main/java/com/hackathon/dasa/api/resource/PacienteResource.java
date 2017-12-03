@@ -30,7 +30,6 @@ public class PacienteResource {
 		Paciente paciente = pacienteRepository.findByCpf(cpf);
 
 		return paciente != null ? ResponseEntity.ok(paciente) : ResponseEntity.notFound().build();
-		
 	}
 	
 }
