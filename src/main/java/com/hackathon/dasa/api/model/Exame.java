@@ -1,6 +1,7 @@
 package com.hackathon.dasa.api.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -15,8 +16,13 @@ public class Exame {
 	private String codigo;
 	private String data;
 	private String laudo;
-	
-	
+	@OneToMany( fetch = FetchType.EAGER, mappedBy = "exame")
+	private List<Imagem> imagens;
+
+	public List<Imagem> getImagens() {
+		return imagens;
+	}
+
 	public Long getId() {
 		return id;
 	}
