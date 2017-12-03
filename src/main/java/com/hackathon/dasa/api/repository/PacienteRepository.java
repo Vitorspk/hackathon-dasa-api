@@ -6,6 +6,6 @@ import com.hackathon.dasa.api.model.Paciente;
 
 public interface PacienteRepository extends JpaRepository<Paciente, Long> {
 	
-	Paciente findByCpf(String cpf);
+	Paciente findByNome(String nome);
 
 }

@@ -24,10 +24,10 @@ public class PacienteResource {
 		return pacienteRepository.findAll();
 	}
 	
-	@GetMapping("/{cpf}")
-	public ResponseEntity<Paciente> buscaPeloCpf(@PathVariable("cpf") String cpf) {
+	@GetMapping("/{nome}")
+	public ResponseEntity<Paciente> buscaPeloCpf(@PathVariable("nome") String nome) {
 		
-		Paciente paciente = pacienteRepository.findByCpf(cpf);
+		Paciente paciente = pacienteRepository.findByNome(nome);
 
 		return paciente != null ? ResponseEntity.ok(paciente) : ResponseEntity.notFound().build();
 	}
