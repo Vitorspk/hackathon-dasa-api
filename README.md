@@ -29,19 +29,6 @@ This README would normally document whatever steps are necessary to get your app
 * Other community or team contact
 
 
-hackatonsensedia@gmail.com
-freia123@
-
-bitbucket
-Username : hackatonsensedia@gmail.com
-Password : freia123@
-
-
-gmail
-Username : hackatonsensedia@gmail.com
-Password : freia123@
-
-
 1º Instalar o git
 2º Instalar o Eclipse ou outras IDE's
 3º Instalar o Mysql
